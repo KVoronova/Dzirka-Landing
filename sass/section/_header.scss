@@ -1,0 +1,162 @@
+@use "../base/base" as *;
+
+.header {
+    height: 740px;
+    background-image: url(/img/main-bacground.svg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+
+    &__header-nav {
+        display: flex;
+        flex-direction: row;
+        // width: 920px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        cursor: pointer;
+
+    }
+
+    &__logo-box {
+        margin-right: 70px;
+    }
+
+
+    &__header-btn {
+        margin-left: 70px;
+        width: 120px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #0D0D0E;
+        border: none;
+        color: #E8FC73;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: #FF7EFA;
+        }
+
+        &:active {
+            background-color: rgba(120, 255, 134, 1);
+            transform: scale(1);
+            -webkit-transform: scale(1);
+        }
+    }
+
+    &__header-box {
+        margin-top: 22px;
+        text-align: center;
+    }
+
+    &__main-header {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 50px;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        font-family: "FeatureMono";
+    }
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    &__link {
+        &:hover {
+            color: #FF7EFA;
+            // font-weight: 500;
+        }
+    }
+}
+
+
+.david-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+    height: 466px;
+
+
+
+    &__david-img {
+        background-image: url(/img/David-first-version.svg);
+        position: absolute;
+        height: 466px;
+        width: 346px;
+        backface-visibility: hidden;
+        transition: all .7s;
+
+        &:hover {
+            background-image: url(/img/David.svg);
+            transform: scale(1) translateY(-0.5rem);
+        }
+    }
+
+}
+
+
+.tape-box {
+    display: flex;
+    position: relative;
+
+    &__line-for-header {
+        margin-top: -272px;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+
+
+.btn-main-box {
+    display: flex;
+    width: 221px;
+    height: 87px;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/img/Vector-for-button.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -87px 0px 0px 124px;
+    position: relative;
+
+    &:hover {
+        background-image: url(/img/Vector-for-button-2.svg);
+    }
+
+
+    &__main-btn {
+        border: none;
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+        background-color: transparent;
+        cursor: pointer;
+        font-family: "FeatureMono";
+        transition: transform 0.1s ease;
+        position: absolute;
+        margin-left: 11px;
+
+        &:active {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+        }
+
+    }
+
+}

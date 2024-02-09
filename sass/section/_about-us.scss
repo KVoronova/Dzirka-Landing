@@ -1,0 +1,93 @@
+@use "../base/base" as *;
+
+.section-about-us {
+    height: 490px;
+    background-color: rgba(251, 255, 246, 1);
+}
+
+.heading-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    font-family: "FeatureMono";
+}
+
+.col-1-of-4 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin: 50px 140px 100px 140px;
+}
+
+.about-us-box {
+    text-align: center;
+    position: relative;
+
+
+    &__photo {
+        width: 100px;
+        height: 100px;
+        padding-bottom: 20px;
+    }
+
+
+    &__text {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    &__photo-vector {
+        position: absolute;
+        top: -16px;
+        left: 38px;
+    }
+
+    &__vector-img {
+        width: 71px;
+        height: 52px;
+    }
+
+    &__photo-vector-second {
+        position: absolute;
+        top: -28px;
+        left: 81px;
+    }
+
+    &__vector-img-second {
+        width: 90px;
+    }
+
+    &__photo-vector-third {
+        position: absolute;
+        top: -10px;
+        left: 47px;
+    }
+
+
+    &__vector-img-third {
+        width: 102px;
+    }
+
+    &__photo-vector-four {
+        position: absolute;
+        top: 47px;
+        left: 53px;
+    }
+
+    &__vector-img-four {
+        width: 102px;
+    }
+
+}
+
+.heading-tertiary {
+    text-align: center;
+    font-size: 18px;
+    font-family: "FeatureMono";
+}

@@ -1,0 +1,119 @@
+@use "../base/base" as *;
+
+.rewiew-section {
+    height: 620px;
+    background-color: #FBFFF6;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rewiew-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 220px 28px 220px;
+    position: relative;
+
+    /*display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row dense;
+    */
+
+    &__photo-user {
+        width: 100px;
+        height: 100px;
+        margin: 0px 330px 20px 330px;
+    }
+
+
+
+    &__name-user {
+        font-size: 18px;
+        font-weight: 500;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-family: "FeatureMono";
+
+    }
+
+    &__city-user {
+        font-size: 14px;
+        height: 20px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+
+    &__star-user {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    &__rewiew-user {
+        text-align: center;
+    }
+
+    &__prev,
+    &__next {
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute;
+        width: 80px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.6s ease;
+        margin-top: -245px;
+        text-align: center;
+
+        &:hover {
+            text-shadow: 2px 2px 3px #FF7EFA;
+        }
+    }
+
+    &__prev {
+        left: 139px;
+    }
+
+    &__next {
+        right: 139px;
+    }
+}
+
+
+
+.slide-container {
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.dot-container {
+    text-align: center;
+
+    &__dot {
+        cursor: pointer;
+        height: 5px;
+        width: 5px;
+        margin: 0 2px;
+        background-color: #C4C4C4;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+
+        &:active,
+        &:hover {
+            background-color: #B1E4D0;
+        }
+    }
+
+}

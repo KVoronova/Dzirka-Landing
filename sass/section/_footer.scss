@@ -1,0 +1,93 @@
+@use "../base/base" as *;
+
+.footer-container {
+    background-color: #FBFFF6;
+    height: 225px;
+    display: grid;
+}
+
+.footer-box {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px 50px;
+    grid-auto-flow: row dense;
+    height: 120px;
+    margin: 50px 140px 30px 70px;
+
+
+    &__logo-box {
+        align-self: center;
+        justify-self: center;
+    }
+
+    &__footer-logo {
+        margin-left: 30px;
+    }
+
+    &__contact-box {
+        width: 200px;
+    }
+
+    &__nav-footer-box {
+        // width: 200px;
+        cursor: pointer;
+    }
+
+    &__info-box {
+        // width: 200px;
+        cursor: pointer;
+    }
+
+}
+
+.text-logo {
+    color: #B1E4D0;
+    font-size: 14px;
+    font-family: "FeatureMono";
+    font-weight: 500;
+}
+
+
+.footer-heading {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+
+.item-1 {
+    list-style: none;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 300;
+
+
+
+}
+
+.icon-img {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+.item {
+    list-style: none;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+
+    &:hover {
+        color: #FF7EFA;
+    }
+
+}
+
+.icon-li {
+    margin-right: 8px;
+    vertical-align: middle;
+    width: 5px;
+    height: 6px;
+}
