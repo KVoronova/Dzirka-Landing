@@ -493,7 +493,11 @@ body {
   -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
-.dot-container__dot:active, .dot-container__dot:hover {
+.dot-container__dot:hover {
+  background-color: #B1E4D0;
+}
+
+.active {
   background-color: #B1E4D0;
 }
 
@@ -638,4 +642,11 @@ body {
   vertical-align: middle;
   width: 5px;
   height: 6px;
+}
+
+.copyright {
+  color: #9D9DA9;
+  font-size: 8px;
+  text-align: center;
+  font-weight: 300;
 }

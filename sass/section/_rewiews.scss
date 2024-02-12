@@ -8,6 +8,8 @@
 
 }
 
+
+
 .rewiew-box {
     display: flex;
     flex-direction: column;
@@ -97,6 +99,7 @@
 }
 
 
+
 .dot-container {
     text-align: center;
 
@@ -110,10 +113,13 @@
         display: inline-block;
         transition: background-color 0.6s ease;
 
-        &:active,
         &:hover {
             background-color: #B1E4D0;
         }
     }
 
+}
+
+.active {
+    background-color: #B1E4D0;
 }
