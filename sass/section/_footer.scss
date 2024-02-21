@@ -1,8 +1,8 @@
 @use "../base/base" as *;
+@use "../components/variables" as *;
 
 .footer-container {
-    background-color: #FBFFF6;
-    height: 225px;
+    background-color: $color-main;
     display: grid;
 }
 
@@ -26,23 +26,23 @@
     }
 
     &__contact-box {
-        width: 200px;
+        padding-left: 50px;
     }
 
     &__nav-footer-box {
-        // width: 200px;
         cursor: pointer;
+        padding-left: 50px;
     }
 
     &__info-box {
-        // width: 200px;
         cursor: pointer;
+        padding-left: 10px;
     }
 
 }
 
 .text-logo {
-    color: #B1E4D0;
+    color: $color-text-logo;
     font-size: 14px;
     font-family: "FeatureMono";
     font-weight: 500;
@@ -52,7 +52,7 @@
 .footer-heading {
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 
@@ -60,7 +60,7 @@
 .item-1 {
     list-style: none;
     font-size: 12px;
-    line-height: 25px;
+    line-height: 28px;
     font-weight: 300;
 
 
@@ -76,11 +76,11 @@
 .item {
     list-style: none;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 25px;
     font-weight: 300;
 
     &:hover {
-        color: #FF7EFA;
+        color: $color-main-pink;
     }
 
 }
@@ -93,7 +93,7 @@
 }
 
 .copyright {
-    color: #9D9DA9;
+    color: $color-grey;
     font-size: 8px;
     text-align: center;
     font-weight: 300;

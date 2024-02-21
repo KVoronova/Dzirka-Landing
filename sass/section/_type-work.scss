@@ -1,6 +1,6 @@
 .container-work {
     background-image: url(/img/background-work.svg);
-    height: 580px;
+    min-height: 580px;
     background-size: cover;
     background-position: center;
 }
@@ -17,24 +17,40 @@
     display: grid;
     position: relative;
     cursor: pointer;
-    transition: transform .3s;
+    transition: transform .4s ease;
+    // width: 200px;
+    // height: 130px;
 
     &:hover {
         transform: translateY(-1rem) scale(1);
+    }
 
+    &:hover .work-box__blur {
+        background-color: rgb(255, 126, 250);
+        filter: blur(5px);
+    }
+
+    &:hover .heading-box {
+        justify-self: start;
+        padding-left: 20px;
+    }
+
+    &:hover .icon-head {
+        transform: rotateY(3.142rad);
+    }
+
+    &:hover .icon-pink {
+        transform: scale(1.2);
+    }
+
+    &:hover .work-box__blur-pink {
+        background-color: #F5FEC2;
     }
 
 
     &__blur {
         filter: blur(5px);
         background-color: #F5FEC2;
-        width: 200px;
-        height: 130px;
-
-        &:hover {
-            background-color: rgb(255, 126, 250);
-
-        }
     }
 
     &__blur-pink {
@@ -42,10 +58,6 @@
         background-color: rgb(255, 126, 250);
         width: 200px;
         height: 130px;
-
-        &:hover {
-            background-color: #F5FEC2;
-        }
     }
 }
 
@@ -54,7 +66,6 @@
     align-self: center;
     justify-self: center;
     position: absolute;
-
 }
 
 .heading-four {
@@ -63,26 +74,17 @@
     line-height: 20px;
 }
 
-.icon-head {
-    width: 124px;
-    height: 183px;
-    margin-left: 65px;
-    margin-bottom: 20px;
 
-    &:hover {
-        transform: rotateY(3.142rad);
-    }
+.icon-head {
+    margin-left: 60px;
 }
+
 
 .icon-pink {
     font-size: 18px;
     font-weight: 500;
     display: grid;
     position: absolute;
-    top: 90px;
-    left: 21px;
-
-    &:hover {
-        color: #F5FEC2;
-    }
+    top: 85px;
+    left: 20px;
 }

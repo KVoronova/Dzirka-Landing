@@ -1,6 +1,9 @@
+@use "../components/variables" as *;
+
+
 .gallery-container {
     background-image: url(/img/Gallery-background.svg);
-    height: 550px;
+    min-height: 550px;
     background-size: cover;
     background-position: center;
 }
@@ -9,9 +12,9 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0px 25px;
+    gap: 0px 35px;
     grid-auto-flow: row dense;
-    margin: 50px 140px 55px 140px;
+    margin: 55px 140px 55px 140px;
 
 
     &__photo-box {
@@ -24,7 +27,7 @@
 
         &:hover {
             transform: scale(1.1);
-            // box-shadow: 1px 1px 12px #FF7EFA;
+            // box-shadow: 1px 1px 12px $color-main-oink;
             background-image: url(/img/gallery-back-2.svg);
         }
     }
@@ -59,13 +62,13 @@
         font-size: 12px;
 
         &:hover {
-            color: #FF7EFA;
+            color: $color-main-pink;
         }
 
     }
 
     &__btn-arrow {
         font-size: 13px;
-        text-shadow: 2px 2px 3px #FF7EFA;
+        text-shadow: 2px 2px 3px $color-main-pink;
     }
 }

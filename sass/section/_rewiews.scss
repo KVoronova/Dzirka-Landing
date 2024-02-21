@@ -1,7 +1,7 @@
 @use "../base/base" as *;
 
 .rewiew-section {
-    height: 620px;
+    // height: 620px;
     background-color: #FBFFF6;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px 220px 28px 220px;
+    margin: 53px 220px 28px 220px;
     position: relative;
 
     /*display: grid;
@@ -28,7 +28,7 @@
     &__photo-user {
         width: 100px;
         height: 100px;
-        margin: 0px 330px 20px 330px;
+        margin: 0px 330px 15px 330px;
     }
 
 
@@ -55,7 +55,7 @@
 
     &__star-user {
         margin-top: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 26px;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -102,11 +102,12 @@
 
 .dot-container {
     text-align: center;
+    margin-bottom: 87px;
 
     &__dot {
         cursor: pointer;
-        height: 5px;
-        width: 5px;
+        height: 6px;
+        width: 6px;
         margin: 0 2px;
         background-color: #C4C4C4;
         border-radius: 50%;

@@ -1,8 +1,9 @@
 @use "../base/base" as *;
+@use "../components/variables" as *;
 
 .section-about-us {
-    height: 490px;
-    background-color: rgba(251, 255, 246, 1);
+    // height: 490px;
+    background-color: $color-main;
 }
 
 .heading-sub {
@@ -30,14 +31,14 @@
 
 
     &__photo {
-        width: 100px;
-        height: 100px;
+        width: 119px;
+        height: 119px;
         padding-bottom: 20px;
     }
 
 
     &__text {
-        padding-top: 10px;
+        padding-top: 15px;
         text-align: center;
         font-size: 14px;
     }
@@ -55,28 +56,28 @@
 
     &__photo-vector-second {
         position: absolute;
-        top: -28px;
-        left: 81px;
+        top: -35px;
+        left: 75px;
     }
 
     &__vector-img-second {
-        width: 90px;
+        width: 109px;
     }
 
     &__photo-vector-third {
         position: absolute;
-        top: -10px;
-        left: 47px;
+        top: -5px;
+        left: 39px;
     }
 
 
     &__vector-img-third {
-        width: 102px;
+        width: 120px;
     }
 
     &__photo-vector-four {
         position: absolute;
-        top: 47px;
+        top: 60px;
         left: 53px;
     }
 

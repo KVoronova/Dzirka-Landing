@@ -1,7 +1,8 @@
 @use "../base/base" as *;
+@use "../components/variables" as *;
 
 .header {
-    height: 740px;
+    min-height: 740px;
     background-image: url(/img/main-bacground.svg);
     background-size: cover;
     background-position: center;
@@ -11,10 +12,9 @@
     &__header-nav {
         display: flex;
         flex-direction: row;
-        // width: 920px;
         justify-content: center;
         align-items: center;
-        padding-top: 40px;
+        padding-top: 29px;
         cursor: pointer;
 
     }
@@ -29,9 +29,9 @@
         width: 120px;
         height: 30px;
         border-radius: 5px;
-        background-color: #0D0D0E;
+        background-color: $color-black;
         border: none;
-        color: #E8FC73;
+        color: $color-yellow-green;
         text-align: center;
         font-size: 12px;
         font-weight: 500;
@@ -41,18 +41,18 @@
         transition: all 0.2s ease;
 
         &:hover {
-            background-color: #FF7EFA;
+            background-color: $color-main-pink;
         }
 
         &:active {
-            background-color: rgba(120, 255, 134, 1);
+            background-color: $color-green-main;
             transform: scale(1);
             -webkit-transform: scale(1);
         }
     }
 
     &__header-box {
-        margin-top: 22px;
+        margin-top: 36px;
         text-align: center;
     }
 
@@ -72,10 +72,14 @@
     display: flex;
     flex-direction: row;
     gap: 40px;
+    text-decoration: none;
 
     &__link {
+        text-decoration: none;
+        color: $color-black;
+
         &:hover {
-            color: #FF7EFA;
+            color: $color-main-pink;
             // font-weight: 500;
         }
     }
@@ -97,7 +101,6 @@
         position: absolute;
         height: 466px;
         width: 346px;
-        backface-visibility: hidden;
         transition: all .7s;
 
         &:hover {
@@ -132,7 +135,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: -87px 0px 0px 124px;
+    margin: -84px 0px 0px 129px;
     position: relative;
 
     &:hover {
