@@ -1,2 +1,2 @@
 # Dzirka-Pr
-Landing Page (design V.Fomenkova.)
+Landing Page (design V.Fomenkova)
