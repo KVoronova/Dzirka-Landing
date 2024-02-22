@@ -2,8 +2,8 @@
 @use "../components/variables" as *;
 
 .header {
-    min-height: 740px;
     background-image: url(/img/main-bacground.svg);
+    min-height: 740px;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -96,6 +96,7 @@
 
 
 
+
     &__david-img {
         background-image: url(/img/David-first-version.svg);
         position: absolute;
@@ -104,8 +105,9 @@
         transition: all .7s;
 
         &:hover {
-            background-image: url(/img/David.svg);
-            transform: scale(1) translateY(-0.5rem);
+            background-image: url(/img/David-2-new-version.svg);
+            height: 490px;
+            //transform: scale(1) translateY(-0.5rem);
         }
     }
 
@@ -115,6 +117,7 @@
 .tape-box {
     display: flex;
     position: relative;
+
 
     &__line-for-header {
         margin-top: -272px;

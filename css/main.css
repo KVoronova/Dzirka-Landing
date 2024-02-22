@@ -25,8 +25,8 @@ body {
 }
 
 .header {
-  min-height: 740px;
   background-image: url(/img/main-bacground.svg);
+  min-height: 740px;
   background-size: cover;
   background-position: center;
   position: relative;
