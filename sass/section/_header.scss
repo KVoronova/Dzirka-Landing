@@ -1,5 +1,6 @@
 @use "../base/base" as *;
 @use "../components/variables" as *;
+@use "../base/mixins" as *;
 
 .header {
     background-image: url(/img/main-bacground.svg);
@@ -9,6 +10,10 @@
     position: relative;
 
 
+    @include respond (phone) {
+        padding-top: 20px;
+          }
+
     &__header-nav {
         display: flex;
         flex-direction: row;
@@ -16,6 +21,14 @@
         align-items: center;
         padding-top: 29px;
         cursor: pointer;
+
+        @include respond (phone) {
+        display: none;
+          }
+
+          @include respond (tab-port) {
+            display: none;
+              }  
 
     }
 
@@ -54,6 +67,10 @@
     &__header-box {
         margin-top: 36px;
         text-align: center;
+
+        @include respond (tab-port) {
+           margin-top: 1px;
+           }
     }
 
     &__main-header {
@@ -64,6 +81,13 @@
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: 1fr;
         font-family: "FeatureMono";
+
+        @include respond (tab-port) {
+           font-size: 40px;
+           padding: 20px;
+           grid-template-rows: repeat(1, 1fr);
+           line-height: 45px;
+          }
     }
 }
 
@@ -94,8 +118,7 @@
     position: relative;
     height: 466px;
 
-
-
+  
 
     &__david-img {
         background-image: url(/img/David-first-version.svg);
@@ -107,12 +130,17 @@
         &:hover {
             background-image: url(/img/David-2-new-version.svg);
             height: 490px;
-            //transform: scale(1) translateY(-0.5rem);
+          }
+
+          @include respond (tab-port) {
+            background-image: url(/img/David-2-new-version.svg);
+            height: 490px;
+            }
         }
-    }
 
-}
 
+      }
+    
 
 .tape-box {
     display: flex;
@@ -123,6 +151,10 @@
         margin-top: -272px;
         position: absolute;
         width: 100%;
+
+        @include respond (tab-port) {
+          display: none;
+        }
     }
 }
 
@@ -144,6 +176,10 @@
     &:hover {
         background-image: url(/img/Vector-for-button-2.svg);
     }
+
+    @include respond (tab-port) {
+        margin-top: 20px;
+       }
 
 
     &__main-btn {

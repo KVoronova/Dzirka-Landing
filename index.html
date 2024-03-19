@@ -34,7 +34,55 @@
                     <li><a class="navigation__link" href="#">Нашы працы</li></a></li>
                     <li><a class="navigation__link" href="#">Кантакты</a></li>
                 </ul>
-                <button class="header__header-btn">запіс</button>
+                <button class="header__header-btn"
+                    onclick="document.getElementById('id01').style.display='block'">запіс</button>
+
+                <!--MODAL FORM-->
+                
+                <div id="id01" class="modal">
+                    <form class="modal-content" action="/action_page.html">
+                        <div class="container-form">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть форму">&#10005;</span>
+                            <h1 class=heading-form>Запіс на паслугу</h1>
+
+                            <p class="form-text">Пакіньце свае кантактныя дадзеныя і пажаданні. Мы абавязкова звяжамся з
+                                Вамі ў бліжэйшы час.</p>
+
+                            <label for="name"></label>
+                            <input type="text" placeholder="Увядзі сваё імя" name="Name" required minlength="2"
+                                maxlength="35">
+
+
+                            <label for="phone"></label>
+                            <input type="tel" id="phone" name="phone" placeholder="+375 29 666-66-66"
+                                pattern="\+375\s?[\(]{0,1} [0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                                minlength="12" maxlength="20" required>
+
+
+                            <select>
+                                <option value="" hidden>Выберы паслугу са спіса</option>
+                                <optgroup label="Вуха">
+                                    <option>Джеструм</option>
+                                    <option>Дэйс</option>
+
+                                    <option>Лабрэт</option>
+                                <optgroup label="Брыві">
+                                    <option value="">Пракол брыві</option>
+                                </optgroup>
+                                <optgroup label="Нос">
+                                    <option value="">Пракол носа</option>
+                                </optgroup>
+                            </select>
+
+
+                            <div class="clearfix">
+                                <button class="btn-form" type="submit" class="signupbtn">Запiс</button>
+                            </div>
+
+                        </div>
+                </div>
+                </form>
+                <!--END FORM-->
             </nav>
             <div class="header__header-box">
                 <h1 class="header__main-header">Студыя пірсінгу ў Мінску<span>The

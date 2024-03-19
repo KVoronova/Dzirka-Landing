@@ -1,5 +1,6 @@
 @use "../base/base" as *;
 @use "../components/variables" as *;
+@use "../base/mixins" as *;
 
 .footer-container {
     background-color: $color-main;
@@ -12,10 +13,24 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 0px 50px;
     grid-auto-flow: row dense;
-    height: 120px;
     margin: 50px 140px 30px 70px;
 
+    @include respond (tab-port) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 10px;
+    }
 
+    @include respond (phone) {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+    
     &__logo-box {
         align-self: center;
         justify-self: center;
@@ -23,20 +38,49 @@
 
     &__footer-logo {
         margin-left: 30px;
+
+        @include respond(tab-port) {
+           margin-left: 50px;
+           }
     }
 
     &__contact-box {
         padding-left: 50px;
+
+        @include respond (phone) {
+            padding-left: 0px;
+            text-align: center;
+        }
+        @include respond(tab-port) {
+            padding-left: 0px;
+            text-align: center;
+        }
     }
 
     &__nav-footer-box {
         cursor: pointer;
         padding-left: 50px;
+
+       @include respond(phone) {
+           padding-left: 0px;
+       }
+
+        @include respond(tab-port) {
+         text-align: center;
+         padding-left: 0px;
+        }
+
+    
     }
 
     &__info-box {
         cursor: pointer;
         padding-left: 10px;
+
+        @include respond(tab-port) {
+            text-align: center;
+            padding-left: 0px;
+           }
     }
 
 }
@@ -46,6 +90,11 @@
     font-size: 14px;
     font-family: "FeatureMono";
     font-weight: 500;
+
+    @include respond(tab-port) {
+        text-align: center;
+        font-size: 18px;
+       }
 }
 
 
@@ -53,6 +102,14 @@
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 8px;
+
+    @include respond(phone) {
+        font-size: 18px;
+       }
+
+       @include respond(tab-port) {
+        font-size: 17px;
+       }
 }
 
 
@@ -63,7 +120,13 @@
     line-height: 28px;
     font-weight: 300;
 
+    @include respond(phone) {
+        font-size: 16px;
+       }
 
+       @include respond(tab-port) {
+        font-size: 15px;
+       }
 
 }
 
@@ -83,6 +146,13 @@
         color: $color-main-pink;
     }
 
+    @include respond(phone) {
+        font-size: 16px;
+       }
+
+       @include respond(tab-port) {
+        font-size: 15px;
+       }
 }
 
 .icon-li {
@@ -97,4 +167,9 @@
     font-size: 8px;
     text-align: center;
     font-weight: 300;
+
+    @include respond(phone) {
+        font-size: 12px;
+        padding: 2px;
+    }
 }
