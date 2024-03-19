@@ -1,7 +1,7 @@
 @use "../base/base" as *;
+@use "../base/mixins" as *;
 
 .rewiew-section {
-    // height: 620px;
     background-color: #FBFFF6;
     display: flex;
     flex-direction: column;
@@ -18,19 +18,32 @@
     margin: 53px 220px 28px 220px;
     position: relative;
 
-    /*display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: 1fr;
-    gap: 10px 10px;
-    grid-auto-flow: row dense;
-    */
+    @include respond(tab-port){
+        margin: 20px;
+        }
+
+  
+
 
     &__photo-user {
-        width: 100px;
-        height: 100px;
-        margin: 0px 330px 15px 330px;
-    }
+      width: 100px;
+      height: 100px;
+      margin-left: 330px;
+     // margin: 0px 330px 15px 330px;
+      
 
+        @include respond(tab-port){
+           // margin: 0px 130px 15px 130px;
+           width: 100%;
+           margin: 0;
+            }
+
+            @include respond(phone){
+                margin: 0;
+                width: 100%;
+             }
+
+    }
 
 
     &__name-user {
@@ -63,6 +76,10 @@
 
     &__rewiew-user {
         text-align: center;
+
+        @include respond(tab-port) {
+            padding: 0 20px 0 20px;
+        }
     }
 
     &__prev,
@@ -84,10 +101,18 @@
 
     &__prev {
         left: 139px;
+
+        @include respond(tab-port) {
+            left: 50px;
+        }
     }
 
     &__next {
         right: 139px;
+
+        @include respond(tab-port) {
+            right: 50px;
+        }
     }
 }
 
@@ -96,6 +121,15 @@
 .slide-container {
     position: relative;
     margin: 0 auto;
+
+    @include respond (tab-port) {
+        width: 100%;
+    }
+
+    @include respond (tab-land) {
+        width: 100%;
+    }
+ 
 }
 
 
@@ -103,6 +137,10 @@
 .dot-container {
     text-align: center;
     margin-bottom: 87px;
+
+    @include respond(tab-port) {
+        margin-bottom: 40px;
+    }
 
     &__dot {
         cursor: pointer;

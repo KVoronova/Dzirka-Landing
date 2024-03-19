@@ -1,3 +1,5 @@
+@use "../base/mixins" as *;
+
 *,
 *::after,
 *::before {
@@ -8,6 +10,14 @@
 
 html {
     font-size: 14px;
+
+    @include respond(tab-land) {
+        font-size: 90%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 80%;
+    }
 }
 
 body {
