@@ -10,9 +10,18 @@
     position: relative;
 
 
-    @include respond (phone) {
-        padding-top: 20px;
-          }
+ /*  
+    @media only screen and (max-width: 800px) {
+        padding-top: 100px;
+        background-image: url(/img/Mobile-background.svg);
+        }  
+       
+  @include respond(phone) {
+            font-size: 35px;
+            padding-top: 5px;
+            background-image: url(/img/Mobile-background.svg);
+           }
+ */
 
     &__header-nav {
         display: flex;
@@ -23,17 +32,24 @@
         cursor: pointer;
 
         @include respond (phone) {
-        display: none;
+            display: none;
           }
 
-          @include respond (tab-port) {
+        @include respond (tab-port) {
             display: none;
-              }  
-
+              }      
     }
 
     &__logo-box {
         margin-right: 70px;
+
+        @include respond(tab-land-small) {
+            margin-right: 50px;
+          }  
+      
+          @include respond(tab-land) {
+            margin-right: 70px;
+          }
     }
 
 
@@ -62,6 +78,15 @@
             transform: scale(1);
             -webkit-transform: scale(1);
         }
+
+        @include respond(tab-land-small) {
+            margin-left: 50px;
+          }  
+      
+          @include respond(tab-land) {
+            margin-left: 70px;
+          }
+        
     }
 
     &__header-box {
@@ -69,7 +94,8 @@
         text-align: center;
 
         @include respond (tab-port) {
-           margin-top: 1px;
+           padding-top: 12px;
+           margin-top: 0;
            }
     }
 
@@ -88,6 +114,10 @@
            grid-template-rows: repeat(1, 1fr);
            line-height: 45px;
           }
+
+          @include respond(phone) {
+           font-size: 35px;
+          }
     }
 }
 
@@ -97,6 +127,8 @@
     flex-direction: row;
     gap: 40px;
     text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
 
     &__link {
         text-decoration: none;
@@ -106,6 +138,14 @@
             color: $color-main-pink;
             // font-weight: 500;
         }
+    }
+
+    @include respond(tab-land-small) {
+      gap: 30px;  
+    }  
+
+    @include respond(tab-land) {
+        gap: 40px;
     }
 }
 
@@ -118,27 +158,21 @@
     position: relative;
     height: 466px;
 
-  
-
+    
     &__david-img {
-        background-image: url(/img/David-first-version.svg);
+       background-image: url(/img/David-first-version.svg);
         position: absolute;
-        height: 466px;
+        height: 100%;
         width: 346px;
         transition: all .7s;
 
+        @media only screen and (min-width: 801px)  {    
         &:hover {
             background-image: url(/img/David-2-new-version.svg);
             height: 490px;
           }
-
-          @include respond (tab-port) {
-            background-image: url(/img/David-2-new-version.svg);
-            height: 490px;
-            }
         }
-
-
+    }
       }
     
 
@@ -178,13 +212,18 @@
     }
 
     @include respond (tab-port) {
-        margin-top: 20px;
+        margin: auto;
        }
+
+    @include respond(phone) {
+     margin: auto;
+     }   
 
 
     &__main-btn {
         border: none;
         font-size: 14px;
+        font-weight: 500;
         letter-spacing: 0.7px;
         text-transform: uppercase;
         background-color: transparent;

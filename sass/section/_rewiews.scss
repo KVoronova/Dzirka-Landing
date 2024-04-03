@@ -28,14 +28,14 @@
     &__photo-user {
       width: 100px;
       height: 100px;
-      margin-left: 330px;
+    //  margin-left: 330px; 
      // margin: 0px 330px 15px 330px;
       
-
+////inherit
         @include respond(tab-port){
            // margin: 0px 130px 15px 130px;
            width: 100%;
-           margin: 0;
+           margin: 0; 
             }
 
             @include respond(phone){

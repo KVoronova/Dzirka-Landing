@@ -70,9 +70,19 @@
         width: 71px;
         height: 52px;
 
+        @include respond(tab-land-small) {
+            width: 0%;
+        }
+
+        @include respond(tab-land) {
+         width: 71px;
+         height: 52px;
+        }
+
         @include respond(tab-port) {
             width: 0%;
         }
+
     }
 
     &__photo-vector-second {
@@ -83,6 +93,14 @@
 
     &__vector-img-second {
         width: 109px;
+
+        @include respond(tab-land-small) {
+            width: 0%;
+        }
+
+        @include respond(tab-land) {
+         width: 109px;
+        }
 
         @include respond(tab-port) {
             width: 0%;
@@ -99,6 +117,14 @@
     &__vector-img-third {
         width: 120px;
 
+        @include respond(tab-land-small) {
+            width: 0%;
+        }
+
+        @include respond(tab-land) {
+         width: 120px;
+        }
+
         @include respond(tab-port) {
             width: 0%;
         }
@@ -112,6 +138,14 @@
 
     &__vector-img-four {
         width: 102px;
+
+        @include respond(tab-land-small) {
+            width: 0%;
+        }
+
+        @include respond(tab-land) {
+         width: 102px;
+        }
 
         @include respond(tab-port) {
             width: 0%;

@@ -15,6 +15,17 @@
     grid-auto-flow: row dense;
     margin: 50px 140px 30px 70px;
 
+
+    @include respond(tab-land-small) {
+        margin: 50px 20px 30px 20px;
+        gap: 0px 20px;
+    }
+
+    @include respond(tab-land) {
+        margin: 50px 140px 30px 70px;
+        gap: 0px 50px;
+    }
+
     @include respond (tab-port) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
