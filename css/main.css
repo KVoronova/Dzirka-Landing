@@ -474,7 +474,7 @@ body {
 }
 
 .container-work {
-  background-image: url(./img/background-work.svg);
+  background-image: url(/Dzirka-Landing/blob/main/img/background-work.svg);
   min-height: 580px;
   background-size: cover;
   background-position: center;
@@ -784,7 +784,7 @@ body {
 }
 
 .gallery-container {
-  background-image: url(./img/Gallery-background.svg);
+  background-image: url(/Dzirka-Landing/blob/main/img/Gallery-background.svg);
   min-height: 550px;
   background-size: cover;
   background-position: center;
@@ -830,7 +830,7 @@ body {
   }
 }
 .gallery-box__photo-box {
-  background-image: url(./img/gallery-back-1.svg);
+  background-image: url(/Dzirka-Landing/blob/main/img/gallery-back-1.svg);
   height: 230px;
   width: 102%;
   background-position: center;
@@ -866,7 +866,7 @@ body {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1);
-    background-image: url(./img/gallery-back-2.svg);
+    background-image: url(/Dzirka-Landing/blob/main/img/gallery-back-2.svg);
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -874,14 +874,14 @@ body {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1);
-    background-image: url(./img/gallery-back-2.svg);
+    background-image: url(/Dzirka-Landing/blob/main/img/gallery-back-2.svg);
   }
 }
 .gallery-box__photo-box-2 {
-  background-image: url(./img/gallery-back-3.svg);
+  background-image: url(/Dzirka-Landing/blob/main/img/gallery-back-3.svg);
 }
 .gallery-box__photo-box-3 {
-  background-image: url(./img/gallery-back-4.svg);
+  background-image: url(/Dzirka-Landing/blob/main/img/gallery-back-4.svg);
 }
 .gallery-box__gallery-photo {
   width: 100%;
@@ -1177,7 +1177,7 @@ select:focus {
 }
 
 .modal-content {
-  background-image: url(./img/background-authorization.svg);
+  background-image: url(/Dzirka-Landing/blob/main/img/background-authorization.svg);
   background-position: center;
   background-size: cover;
   margin: 5% auto 15% auto;
