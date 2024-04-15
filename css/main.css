@@ -31,11 +31,11 @@ body {
 }
 @font-face {
   font-family: "FeatureMono";
-  src: url("css/feature_mono/FeatureMono-Regular.ttf");
+  src: url("/css/feature_mono/FeatureMono-Regular.ttf");
 }
 
 .header {
-  background-image: url(/Dzirka-Landing/img/main-bacground.svg);
+  background-image: url(/Dzirka-Landing/blob/main/img/main-bacground.svg);
   min-height: 740px;
   background-size: cover;
   background-position: center;
@@ -209,7 +209,7 @@ body {
   height: 466px;
 }
 .david-box__david-img {
-  background-image: url(./img/David-first-version.svg);
+  background-image: url(/Dzirka-Landing/blob/main/img/David-first-version.svg);
   position: absolute;
   height: 100%;
   width: 346px;
@@ -218,7 +218,7 @@ body {
 }
 @media only screen and (min-width: 801px) {
   .david-box__david-img:hover {
-    background-image: url(./img/David-2-new-version.svg);
+    background-image: url(/Dzirka-Landing/blob/main/img/David-2-new-version.svg);
     height: 490px;
   }
 }
@@ -253,7 +253,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(./img/Vector-for-button.svg);
+  background-image: url(/Dzirka-Landing/blob/main/img/Vector-for-button.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -261,7 +261,7 @@ body {
   position: relative;
 }
 .btn-main-box:hover {
-  background-image: url(./img/Vector-for-button-2.svg);
+  background-image: url(/Dzirka-Landing/blob/main/img/Vector-for-button-2.svg);
 }
 @media only screen and (max-width: 900px) {
   .btn-main-box {
