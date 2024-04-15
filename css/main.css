@@ -35,7 +35,7 @@ body {
 }
 
 .header {
-  background-image: url(/Dzirka-Landing/blob/main/img/main-bacground.svg);
+  background-image: url(.../img/main-bacground.svg);
   min-height: 740px;
   background-size: cover;
   background-position: center;
