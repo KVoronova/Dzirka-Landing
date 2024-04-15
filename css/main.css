@@ -31,7 +31,7 @@ body {
 }
 @font-face {
   font-family: "FeatureMono";
-  src: url("/css/feature_mono/FeatureMono-Regular.ttf");
+  src: url("css/feature_mono/FeatureMono-Regular.ttf");
 }
 
 .header {
