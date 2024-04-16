@@ -35,7 +35,7 @@ body {
 }
 
 .header {
-  background-image: url(/img/main-bacground.svg);
+  background-image: url(img/main-bacground.svg);
   min-height: 740px;
   background-size: cover;
   background-position: center;
@@ -209,7 +209,7 @@ body {
   height: 466px;
 }
 .david-box__david-img {
-  background-image: url(/img/David-first-version.svg);
+  background-image: url(img/David-first-version.svg);
   position: absolute;
   height: 100%;
   width: 346px;
@@ -218,7 +218,7 @@ body {
 }
 @media only screen and (min-width: 801px) {
   .david-box__david-img:hover {
-    background-image: url(/img/David-2-new-version.svg);
+    background-image: url(img/David-2-new-version.svg);
     height: 490px;
   }
 }
